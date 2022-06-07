@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BDD Stores</title>
+	<title>Cart | BDD Stores</title>
 
 	<!-- CSS -->
 	<!-- bootstrap css -->
@@ -44,7 +44,7 @@
 				      </li>
 
 				      <li class="nav-item active">
-				        <a class="nav-link" href="#">Cart <span class="sr-only">(current)</span></a>
+				        <a class="nav-link" href="cart.html">Cart <span class="border p-1">0</span></a>
 				      </li>
 				 
 				    </ul>
@@ -55,13 +55,12 @@
 			<div class="search-box-mobile container d-lg-none">
 				 <!-- form -->
 				    <form class="my-2 d-flex">
-				      <input class="form-control mr-sm-2 rounded border-0" type="search" placeholder="Search for products you want..." aria-label="Search">
-				      <button class="btn rounded border-0 d-block ml-n2" type="submit"  style="color: white;">
+				      <input class="form-control mr-0 rounded-left border-0" type="search" placeholder="Search for products you want..." aria-label="Search">
+				      <button class="btn rounded-right border-0 d-block ml-n1" type="submit"  style="color: white;">
 				      	
-				      		<i class="fa-solid fa-magnifying-glass"></i>Search
+				      		<i class="fa-solid fa-magnifying-glass"></i>
 				      	
 				      </button>
-				      button
 				    </form>
 			</div>
 		</section>
@@ -71,7 +70,76 @@
 
 	<!-- main -->
 	<main id="" class="">
-		
+
+		<!-- #cart -->
+		<section id="cart" class="cart mt-5">
+			<div class="container text-center">
+				<h1 class="text-center">Cart</h1>
+
+
+				<div class="table-cont">
+					<!-- desktop view -->
+					<table class="table-desktop-view text-center mx-auto mt-5">
+					  	<tr class="">
+						    <th>Product</th>
+						    <th>Price</th>
+						    <th>Quantity</th>
+						    <th>Sub-total (Price X quantity)</th>
+					 	</tr>
+					  	<tr>
+						    <td class="d-flex justify-content-center">
+						    	<img src="img/handbag-4.jpg" alt="" height="100px" width="">
+						    </td>
+						    <td class="">$400</td>
+						    <td class="">1</td>
+						    <td class="">$400</td>
+					  	</tr>
+					  	<tr>
+						    <td class="d-flex justify-content-center">
+						    	<img src="img/handbag-4.jpg" alt="" height="100px" width="">
+						    </td>
+						    <td class="">$400</td>
+						    <td class="">1</td>
+						    <td class="">$400</td>
+					  	</tr>
+					</table>
+					
+				</div>
+
+				<!-- totals -->
+				<div class="d-flex justify-content-center  justify-content-lg-end">
+					<div class="cart__totals mt-5 ">
+						<div class="card" style="width: 18rem;">
+	  						<div class="card-header">
+	    						<h5>Totals</h5>
+	 		 				</div>
+							<ul class="list-group list-group-flush">
+							    <li class="list-group-item d-flex justify-content-between">
+							    	<label for="">Subtotal</label>
+							    	<p>$400</p>
+							    </li>
+							    <li class="list-group-item d-flex justify-content-between">
+							    	<label for="">Tax</label>
+							    	<p>$5</p>
+							    </li>
+							    <li class="list-group-item d-flex justify-content-between">
+							    	<label for="">Total</label>
+							    	<p>$400</p>
+							    </li>
+							    <li class="list-group-item d-flex justify-content-between">
+							    	<input class="w-100 pl-1" type="text" placeholder="coupon code (optional)">
+							    </li>
+
+							    <li class="list-group-item">
+							    	<button class="border-0 rounded">Proceed to checkout</button>
+							    </li>
+							</ul>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</section>
+		<!-- End #cart -->
 	</main>
 	<!-- End main -->
 

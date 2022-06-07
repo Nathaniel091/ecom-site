@@ -30,7 +30,7 @@ body {
 }
 
 .navbar-collapse form {
-	width: 100%;
+	width: 80%;
 }
 
 .navbar-collapse form input {
@@ -38,14 +38,15 @@ body {
 	font-size: small;
 }
 
-.navbar-collapse form button{
-	color: var(--my-primary-color);
-	border: 1px solid var(--my-primary-color) !important;
+.navbar-collapse form button {
+	color: black;
+	background: var(--my-primary-color);
 }
 
-.navbar-collapse form button:hover {
-		color: white;
-	background: var(--my-primary-color);
+.navbar-collapse form button:hover{
+	color: var(--my-primary-color);
+	border: 1px solid var(--my-primary-color) !important;
+	background: transparent;
 }
 
 /*Search box (mobile view only)*/
