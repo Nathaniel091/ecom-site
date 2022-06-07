@@ -7,6 +7,8 @@
 /*General styling*/
 :root {
   --my-primary-color: #FFA500;
+  --my-primary-color-09: rgba(255, 165, 0, 0.6);
+
   --my-base-color: #232F3E;
 }
 
@@ -14,7 +16,11 @@ body {
 
 }
 
-/*header*/
+.section {
+	margin-top: 100px;
+}
+
+/*HEADER*/
 /*:::::::::::::::::::::::::::::::::::::::
 #nav-bar section
 ::::::::::::::::::::::::::::::::::::::::*/
@@ -46,17 +52,53 @@ body {
 .nav-bar .search-box-mobile button {
 	color: white !important;
 	background: var(--my-primary-color) !important;
-	z-index: -1;
+
 }
 
 
 
 
 
+/*MAIN*/
+/*:::::::::::::::::::::::::::::::::::::::
+#hero section
+::::::::::::::::::::::::::::::::::::::::*/
+@media (min-width:  768px) {
+	.hero .carousel .carousel-inner{
+		height: 500px !important;
+	}
+}
 
 
 
 
+
+/*:::::::::::::::::::::::::::::::::::::::
+#products section
+::::::::::::::::::::::::::::::::::::::::*/
+/*.products .card button {
+	background: var(--my-primary-color);
+}
+
+.products .card button:hover {
+	background: var(--my-primary-color-09);
+}*/
+
+.products .card button {
+	color: var(--my-primary-color);
+	color: black;
+	border:  1px solid var(--my-primary-color);
+}
+
+.products .card button:hover {
+	background: var(--my-primary-color);
+	color: black;
+}
+
+.products__btn_cont button:hover {
+	color: var(--my-primary-color);
+	background: transparent !important;
+}
 
 
 
