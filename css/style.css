@@ -1,0 +1,65 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*General styling*/
+:root {
+  --my-primary-color: #FFA500;
+  --my-base-color: #232F3E;
+}
+
+body {
+
+}
+
+/*header*/
+/*:::::::::::::::::::::::::::::::::::::::
+#nav-bar section
+::::::::::::::::::::::::::::::::::::::::*/
+#nav-bar {
+	/*background: #FFA500;*/
+	background: var(--my-base-color);
+}
+
+.navbar-collapse form {
+	width: 100%;
+}
+
+.navbar-collapse form input {
+	width: 80% !important;
+	font-size: small;
+}
+
+.navbar-collapse form button{
+	color: var(--my-primary-color);
+	border: 1px solid var(--my-primary-color) !important;
+}
+
+.navbar-collapse form button:hover {
+		color: white;
+	background: var(--my-primary-color);
+}
+
+/*Search box (mobile view only)*/
+.nav-bar .search-box-mobile button {
+	color: white !important;
+	background: var(--my-primary-color) !important;
+	z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
