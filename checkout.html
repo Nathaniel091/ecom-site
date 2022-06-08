@@ -200,9 +200,9 @@
 					  		<!-- Direct bank transfers -->
 					  		<div class="payment__bank-transfer mt-5">
 					  			<!-- payment toggle -->
-						  		<div class="payment__bank-transfer-toggle custom-control custom-radio custom-control-inline">
-									<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
-									<label class="custom-control-label" for="customRadioInline1">Direct bank transfers</label>
+								<div class="payment__bank-transfer-toggle">
+									<span id="toggle" class="toggle active mr-3"></span>
+									<label class="" for="toggle">Direct bank transfers</label>
 								</div>
 
 								<!-- payment-details -->
@@ -214,13 +214,14 @@
 					  		<!-- Debit/credit cards -->
 					  		<div class="payment__debit-credit-card">
 					  			<!-- payment toggle -->
-						  		<div class="payment__debit-credit-card-toggle custom-control custom-radio custom-control-inline">
-									<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input ">
-									<label class="custom-control-label" for="customRadioInline1">Debit/Credit card</label>
+
+								<div class="payment__debit-credit-card-toggle">
+									<span id="toggle" class="toggle mr-3"></span>
+									<label class="" for="toggle">Debit/Credit card</label>
 								</div>
 
 								<!-- payment-details -->
-								<div class="payment__debit-credit-card-details w-100">
+								<div class="payment__debit-credit-card-details w-100 d-none">
 									<div class="int-payment-card mt-4 px-3 py-2">
 										<div class="form-row">
 									  		<div class="form-group col-md-12">
@@ -239,7 +240,7 @@
 					  		</div>
 
 					  		<!-- Place order btn -->
-					  		<div class="payment__place-order">
+					  		<div class="payment__place-order mt-4">
 					  			<button class="btn w-100 text-dark">Place your order</button>
 					  		</div>
 
@@ -266,25 +267,43 @@
 
 
 	<script>
-		let bankTransferToggle = document.querySelector('.payment__bank-transfer-toggle input');
+		let bankTransferToggle = document.querySelector('.payment__bank-transfer-toggle span');
 
-		let debitCreditCardToggle = document.querySelector('.payment__debit-credit-card-toggle input');
+		let debitCreditCardToggle = document.querySelector('.payment__debit-credit-card-toggle span');
 
-		// bankTransferToggle.addEventListener('click', function() {
-		// 	if(!bankTransferToggle.hasAttribute('checked') && debitCreditCardToggle.hasAttribute('checked')) {
-		// 		bankTransferToggle.setAttribute('checked', true);
-		// 		debitCreditCardToggle.setAttribute('checked', false);
 
-		// 	}
-		// });
+		let payment_bankTransferDetails = document.querySelector('.payment__bank-transfer-details');
+		let payment_debitCreditCardDetails = document.querySelector('.payment__debit-credit-card-details');
 
-		// debitCreditCardToggle.addEventListener('click', function() {
-			// if(!debitCreditCardToggle.hasAttribute('checked')) {
-				// debitCreditCardToggle.setAttribute('checked', true);
-				// bankTransferToggle.setAttribute('checked', false);
-				// bankTransferToggle.removeAttribute('checked');
-			// }
-		// });
+
+		bankTransferToggle.addEventListener('click', function() {
+			if(!bankTransferToggle.classList.contains('active') && debitCreditCardToggle.classList.contains('active')) {
+				debitCreditCardToggle.classList.remove('active');
+				bankTransferToggle.classList.add('active');
+
+				payment_bankTransferDetails.classList.remove('d-none')
+				payment_debitCreditCardDetails.classList.remove('d-block')
+			} 
+
+			payment_bankTransferDetails.classList.remove('d-block')
+			payment_debitCreditCardDetails.classList.add('d-none')
+		});
+
+		debitCreditCardToggle.addEventListener('click', function() {
+			if(!debitCreditCardToggle.classList.contains('active') && bankTransferToggle.classList.contains('active')) {
+				bankTransferToggle.classList.remove('active');
+				debitCreditCardToggle.classList.add('active');
+				
+				payment_debitCreditCardDetails.classList.remove('d-none')
+			} 
+
+			payment_debitCreditCardDetails.classList.add('d-block')
+			payment_bankTransferDetails.classList.add('d-none')
+
+		});
+
+
+		
 	</script>
 
 	<!-- Scripts -->

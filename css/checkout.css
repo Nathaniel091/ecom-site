@@ -23,7 +23,20 @@ body {
 	background: var(--my-primary-color-09);
 }
 
+/*payment*/
 
+.payment__bank-transfer-toggle .toggle,
+.payment__debit-credit-card-toggle .toggle {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 5px solid rgba(0, 0, 255,0.8);
+	border-radius: 50%;
+}
 
+.payment__bank-transfer-toggle .toggle.active,
+.payment__debit-credit-card-toggle .toggle.active{
+	outline: 3px solid rgba(0, 0, 255,0.3);
+}
 
 
