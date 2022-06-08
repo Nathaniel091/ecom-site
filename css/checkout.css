@@ -1,0 +1,29 @@
+body {
+	background: #f1f1f1;
+}
+
+
+/*::::::::::::::::::::::::::::::::::::
+#billing
+::::::::::::::::::::::::::::::::::::*/
+
+/*billing info*/
+.payment__bank-transfer-details p,
+.payment__debit-credit-card-details{
+	background: #f1f1f1;
+}
+
+.payment__place-order .btn {
+	background: var(--my-primary-color);
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.payment__place-order .btn:hover {
+	background: var(--my-primary-color-09);
+}
+
+
+
+
+

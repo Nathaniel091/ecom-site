@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BDD Stores</title>
+	<title>Checkout | BDD Stores</title>
 
 	<!-- CSS -->
 	<!-- bootstrap css -->
@@ -24,7 +24,7 @@
 		<!-- #nav-bar section-->
 		<section id="nav-bar" class="nav-bar pb-3 pb-lg-0">
 			<nav class="navbar navbar-expand-lg navbar-dark container">
-  				<a class="navbar-brand" href="#"><i class="fa-solid fa-store mr-1" style="color: #FFA500;"></i>BDD Stores</a>
+  				<a class="navbar-brand" href="index.html"><i class="fa-solid fa-store mr-1" style="color: #FFA500;"></i>BDD Stores</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				</button>
@@ -70,18 +70,222 @@
 
 	<!-- main -->
 	<main id="" class="">
-		
+		<!-- #billing -->
+		<section id="billing" class="billing">
+			<h1 class="text-center mt-5">Billing</h1>
+			<div class="row container mt-5 mx-auto">
+
+				<!-- billing info -->
+				<div class="billing-info col-12 col-md-6 justify-content-start">
+					<h4>Billing info</h4>
+					<form>
+						<h5 class="text-secondary mt-4 d-md-none"> <em>Personal information</em></h5>
+						<!-- first & last names -->
+					  	<div class="form-row">
+						    <div class="form-group col-md-6">
+						      	<label for="inputEmail4">First name</label>
+						      	<input type="email" class="form-control" id="inputEmail4">
+						    </div>
+						    <div class="form-group col-md-6">
+						      	<label for="inputPassword4">Last name</label>
+						      	<input type="password" class="form-control" id="inputPassword4">
+						    </div>
+					  	</div>
+						
+						<!-- Phone & email -->
+					  	<div class="form-row">
+						    <div class="form-group col-md-6">
+						      	<label for="inputPhone">Phone</label>
+						      	<input type="tel" class="form-control" id="inputPhone">
+						    </div>
+
+						    <div class="form-group col-md-6">
+						      	<label for="inputEmail4">Email</label>
+						      	<input type="email" class="form-control" id="inputEmail4">
+						    </div>
+						</div>
+
+						<!-- country, state & town -->
+					  	<div class="form-row">
+					  		<h5 class="text-secondary mt-4 d-md-none"> <em>Location information</em></h5>
+					  		<div class="form-group col-md-12">
+						      	<label for="inputCountry">Country</label>
+						      	<select id="inputCountry" class="form-control">
+						        	<option selected>Nigeria</option>
+						        	<option>Country 1</option>
+						        	<option>Country 2</option>
+						        	<option>Country 3</option>
+						        	<option>Country 4</option>
+						        	<option>Country 5</option>
+						        	<option>Country 6</option>
+						        	<option>Country 7</option>
+						        </select>
+						    </div>
+
+						    <div class="form-group col-md-6">
+						      	<label for="inputState">State</label>
+						      	<select id="inputState" class="form-control">
+						        	<option selected>Abia</option>
+						        	<option>State 1</option>
+						        	<option>State 2</option>
+						        	<option>State 3</option>
+						        	<option>State 4</option>
+						        	<option>State 5</option>
+						        	<option>State 6</option>
+						        	<option>State 7</option>
+						        </select>
+						    </div>
+
+						    <div class="form-group col-md-6">
+						      	<label for="inputCity">Town/City</label>
+						      	<select id="inputCity" class="form-control">
+						        	<option selected>Aba</option>
+						        	<option>City 1</option>
+						        	<option>City 2</option>
+						        	<option>City 3</option>
+						        	<option>City 4</option>
+						        	<option>City 5</option>
+						        	<option>City 6</option>
+						        	<option>City 7</option>
+						        </select>
+						    </div>
+					  	</div>
+
+					  	<!-- street address -->
+					  	<div class="form-row">
+					  		<div class="form-group col-12">
+							    <label for="inputAddress">Street Address</label>
+							    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St | Apartment, studio, or floor">
+							</div>
+						</div>
+
+						<!-- Additional info -->
+					  	<div class="form-row">
+					  		<div class="form-group col-md-12">
+							    <label for="inputNote">Additional info</label>
+
+							    <textarea name="" id="inputNote" class="form-control w-100 px-3 py-2" cols="" rows="" placeholder="Additional notes about your order"></textarea>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<!-- payment / your order -->
+				<div class="payment col-12 col-md-6 justify-content-center border-left mt-5 mt-md-0">
+					<h4>Payment</h4>
+
+					<div class="card">
+					  	<div class="card-header d-flex justify-content-between">
+					    	<h6>Product</h6> 
+					    	<h6>Subtotal</h6>
+					  	</div>
+
+					  	<ul class="list-group list-group-flush">
+					    	<li class="list-group-item d-flex justify-content-between py-2">
+					    		<p>Tote bag × 2</p> <p>$910</p>
+					    	</li>
+					    	<li class="list-group-item d-flex justify-content-between py-2">
+					    		<p>Lorry Red X × 1</p> <p>$305</p>
+					    	</li>
+					    	<li class="list-group-item d-flex justify-content-between py-2">
+					    		<h6>Subtotal</h6> <p>$1215</p>
+					    	</li>
+					    	<li class="list-group-item d-flex justify-content-between py-2">
+					    		<h6>Total</h6> <p>$1215</p>
+					    	</li>
+					  	</ul>
+
+					  	<!-- payment methods -->
+					  	<div class="card-footer">
+					  		<!-- Direct bank transfers -->
+					  		<div class="payment__bank-transfer mt-5">
+					  			<!-- payment toggle -->
+						  		<div class="payment__bank-transfer-toggle custom-control custom-radio custom-control-inline">
+									<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
+									<label class="custom-control-label" for="customRadioInline1">Direct bank transfers</label>
+								</div>
+
+								<!-- payment-details -->
+								<div class="payment__bank-transfer-details w-100">
+									<p class="mt-4 px-3 py-2 small">Make your payment directly into our bank account BDD NIGERIA LIMITED: ZENITH BANK NUMBER : 101010101. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+								</div>
+					  		</div>
+
+					  		<!-- Debit/credit cards -->
+					  		<div class="payment__debit-credit-card">
+					  			<!-- payment toggle -->
+						  		<div class="payment__debit-credit-card-toggle custom-control custom-radio custom-control-inline">
+									<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input ">
+									<label class="custom-control-label" for="customRadioInline1">Debit/Credit card</label>
+								</div>
+
+								<!-- payment-details -->
+								<div class="payment__debit-credit-card-details w-100">
+									<div class="int-payment-card mt-4 px-3 py-2">
+										<div class="form-row">
+									  		<div class="form-group col-md-12">
+										      	<label for="inputCountry">Country</label>
+										      	<select id="inputCountry" class="form-control">
+										        	<option selected>MasterCard</option>
+										        	<option>Visa</option>
+										        	<option>Verve</option>
+										        	<option>Paystack</option>
+										        	<option>FlutterWave</option>
+										        </select>
+										    </div>
+										</div>
+									</div>
+								</div>
+					  		</div>
+
+					  		<!-- Place order btn -->
+					  		<div class="payment__place-order">
+					  			<button class="btn w-100 text-dark">Place your order</button>
+					  		</div>
+
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End #billing -->
 	</main>
 	<!-- End main -->
 
+	
+
+
 	<!-- footer -->
-	<footer id="" class=""></footer>
+	<footer id="" class="">
+
+	</footer>
 	<!-- End footer  -->
 
 
 
 
 
+	<script>
+		let bankTransferToggle = document.querySelector('.payment__bank-transfer-toggle input');
+
+		let debitCreditCardToggle = document.querySelector('.payment__debit-credit-card-toggle input');
+
+		// bankTransferToggle.addEventListener('click', function() {
+		// 	if(!bankTransferToggle.hasAttribute('checked') && debitCreditCardToggle.hasAttribute('checked')) {
+		// 		bankTransferToggle.setAttribute('checked', true);
+		// 		debitCreditCardToggle.setAttribute('checked', false);
+
+		// 	}
+		// });
+
+		// debitCreditCardToggle.addEventListener('click', function() {
+			// if(!debitCreditCardToggle.hasAttribute('checked')) {
+				// debitCreditCardToggle.setAttribute('checked', true);
+				// bankTransferToggle.setAttribute('checked', false);
+				// bankTransferToggle.removeAttribute('checked');
+			// }
+		// });
+	</script>
 
 	<!-- Scripts -->
 	<!-- jquery -->
